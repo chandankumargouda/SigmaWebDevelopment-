@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bounce Ball</title>
+    <style>
+      .container {
+        padding: 12px;
+        margin: 12px;
+        height: 80vh;
+        width: 80vw;
+        background-color: antiquewhite;
+       position:relative
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        left:0;
+        border-radius: 50%;
+        background-color: black;
+        animation: chandanx 3s linear infinite, chandany 1s ease-out infinite alternate;
+      }
+      @keyframes chandanx {
+        0% {
+          background-color: red;
+          left:0;
+        }
+        100% {
+            left:100%;
+          background-color: green;
+        }
+    }
+    @keyframes chandany {
+       0% {
+        bottom: 0;
+          background-color: red;
+       } 
+        100% {
+            bottom:100%;
+          background-color: green;
+        } 
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
