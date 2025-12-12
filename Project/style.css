@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Martel Sans", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(Images/bg.jpg);
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1000px, 100vw);
+  position: relative;
+}
+.main .box {
+  width: 100%;
+  height: 80vh;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+nav img {
+  position: relative;
+  z-index: 10;
+}
+nav .span1 {
+  position: relative;
+  z-index: 10;
+}
+nav .span1 .B {
+  font-size: small;
+  width: 55px;
+  text-align: center;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: red;
+  border-radius: 5px;
+}
+nav .span1 button select {
+  width: 80px;
+  font-weight: 600;
+  background-color: rgb(23, 23, 23);
+  color: rgb(245, 248, 250);
+  border-radius: 5px;
+}
+.Hero {
+  font-family: "Martel Sans", sans-serif;
+  position: relative;
+  height: calc(100% - 65px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 13px;
+  padding: 0px 23px;
+}
+.Hero > :nth-child(1) {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+.Hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.Hero > :nth-child(3) {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+.Hero .A input {
+  height: 30px;
+  width: 280px;
+  text-align: left;
+  font-weight: 100;
+  font-size: medium;
+  background-color: rgba(23, 23, 23, 0.951);
+  color: aliceblue;
+}
+.Hero .A button {
+  background-color: rgb(233, 10, 10);
+  color: aliceblue;
+  font-weight: 500;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0px 13px 0px 11px;
+}
+.line {
+  height: 5px;
+  width: 100vw;
+  background-color: rgb(46, 45, 45);
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+}
+@media screen and (max-width: 1300px){
+    .first{
+        flex-wrap: wrap;
+    }
+}
+.secImg {
+  position: relative;
+  display: flex;
+  align-self: right;
+}
+.secImg img {
+  width: 30vw;
+}
+.secImg video {
+  width: 30vw;
+}
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: 900;
+  padding: 34px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  padding: 30px;
+}
+
+.image-scroll img {
+  width: 250px;
+  height: 150px;
+  margin-right: 20px;
+  display: inline-block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.freqbox h2 {
+  color: aliceblue;
+  text-align: center;
+}
+.freqbox {
+  background-color: black;
+  color: white;
+  padding: 34px;
+}
+.freqbox .box1 {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(60, 62, 61);
+  text-align: center;
+  color: white;
+  width: 40vw;
+  height: 40px;
+  margin: 12px;
+  margin: 12px auto 12px;
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  justify-content: left;
+  cursor: pointer;
+}
+.freqbox .box1:hover {
+  background-color: rgb(128, 135, 135);
+}
+footer {
+  color: white;
+  padding: 34px;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  max-width: 60vw;
+  margin: auto;;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;;
+}
+.footer-item a{
+    text-decoration: none;
+    color: rgba(182, 187, 191, 0.804);
+}
